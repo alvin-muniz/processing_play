@@ -3,15 +3,19 @@ import processing.core.PApplet;
 
 import java.util.ArrayList;
 
-public class BinarySort extends PApplet{
+public class BinarySort_Rectangle extends PApplet{
+
+    public static PApplet processing;
 
     @Override
     public void setup() {
+        processing = this;
     }
 
     @Override
     public void settings() {
         size(500, 500);
+        color(44);
     }
 
 
@@ -38,12 +42,13 @@ public class BinarySort extends PApplet{
         for(int j = 0; j < array.size(); j++ ) {
 
         }
+
         noLoop();
     }
     static public void main(String args[]) {
 
-        PApplet.main("com.alvinmuniz.processing.sorting.BinarySort", args);
-
+        PApplet.main("com.alvinmuniz.processing.sorting.Binary_Rectangle",
+                args);
     }
 
 
