@@ -35,9 +35,7 @@ public class BinarySort extends PApplet{
                 rect(x + (2 * i), y, width, height);
         }
 
-        for(int j = 0; j < array.size(); j++ ) {
 
-        }
         noLoop();
     }
     static public void main(String args[]) {

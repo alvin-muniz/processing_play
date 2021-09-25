@@ -8,7 +8,7 @@ public class Rectangle {
     int height;
     int width;
 
-    public Rectangle(int x, int y, int color, int height, int width) {
+    public Rectangle(int x, int y,   int width, int height, int color) {
         this.x = x;
         this.y = y;
         this.color = color;
@@ -17,7 +17,17 @@ public class Rectangle {
     }
 
     public void draw() {
-        BinarySort_Rectangle.processing.line(1,2,2,3);
+        BinarySort_Rectangle.processing.fill(255,200,200);
+
+        BinarySort_Rectangle.processing.rect(this.x,this.y,this.width, this.height);
+
+    }
+
+    public void settings() {
+
+    }
+    public void setup() {
+
     }
 
     public int getX() {
@@ -60,12 +70,7 @@ public class Rectangle {
         this.width = width;
     }
 
-    public void settings() {
 
-    }
-    public void setup() {
-
-    }
 
 
 }
