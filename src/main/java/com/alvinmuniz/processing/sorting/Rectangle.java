@@ -4,11 +4,11 @@ public class Rectangle {
 
     int x;
     int y;
-    int color;
+    Color color;
     int height;
     int width;
 
-    public Rectangle(int x, int y,   int width, int height, int color) {
+    public Rectangle(int x, int y, int width, int height, Color color) {
         this.x = x;
         this.y = y;
         this.color = color;
@@ -17,17 +17,22 @@ public class Rectangle {
     }
 
     public void draw() {
-        BinarySort_Rectangle.processing.fill(255,200,200);
-
-        BinarySort_Rectangle.processing.rect(this.x,this.y,this.width, this.height);
+            BinarySort_Rectangle.processing.fill(this.color.red, this.color.green
+                    , this.color.blue);
+            BinarySort_Rectangle.processing.rect(this.x, this.y, this.width,
+                    this.height);
 
     }
 
     public void settings() {
 
     }
+
     public void setup() {
 
+    }
+
+    public void shift() {
     }
 
     public int getX() {
@@ -46,11 +51,11 @@ public class Rectangle {
         this.y = y;
     }
 
-    public int getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(int color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
@@ -70,7 +75,42 @@ public class Rectangle {
         this.width = width;
     }
 
+}
 
+class Color {
+    int red;
+    int green;
+    int blue;
+
+    public Color(int red, int green, int blue) {
+        this.red = red;
+        this.green = green;
+        this.blue = blue;
+    }
+
+    public int getGreen() {
+        return green;
+    }
+
+    public void setGreen(int green) {
+        this.green = green;
+    }
+
+    public int getBlue() {
+        return blue;
+    }
+
+    public void setBlue(int blue) {
+        this.blue = blue;
+    }
+
+    public int getRed() {
+        return red;
+    }
+
+    public void setRed(int red) {
+        this.red = red;
+    }
 
 
 }
